@@ -1,10 +1,10 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Post } from '@nestjs/common';
 
 @Controller('user')
 export class UserController {
 
-    @Get()
-    async getAllUsers() {
+    @Post()
+    async createUser() {
         return JSON.stringify({ test: 'abc' });
     }    
 }
